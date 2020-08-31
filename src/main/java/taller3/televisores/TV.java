@@ -46,7 +46,10 @@ public class TV {
 		precio=pre;
 	}
 	public void setVolumen (int vol) {
-		volumen=vol;
+		if((volumen>=1) && (volumen >=7)){
+			volumen=vol;
+		}
+		
 	}
 	public void setCanal (int can) {
 		if ((can<=120)  && (estado==true) && (can>=1)){
