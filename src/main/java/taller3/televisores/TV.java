@@ -63,12 +63,12 @@ public class TV {
 		estado=false;
 	}
 	public void canalUp () {
-		if ((canal<120) && (estado==true)) {
+		if ((canal<120) && (canal>1) && (estado==true)) {
 		canal++;
 	}
 	}
 	public void canalDown () {
-		if ((canal>1) && (estado==true)) {
+		if ((canal>1)&& (canal<120) && (estado==true)) {
 		canal--;
 		}
 	}
