@@ -39,7 +39,9 @@ public class Control {
 		tv.control=this;
 	}
 	public void setCanal (int can) {
-		tv.canal=can;
+		if ((can<=120)  && (tv.estado==true) && (can>=1)){
+			tv.canal=can;
+		}
 	}
 
 }
