@@ -46,7 +46,7 @@ public class TV {
 		precio=pre;
 	}
 	public void setVolumen (int vol) {
-		if((volumen>=0) && (volumen <=7)){
+		if((vol>=0) && (vol<=7)){
 			volumen=vol;
 		}
 		
